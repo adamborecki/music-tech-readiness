@@ -25,3 +25,11 @@ The Ochs paragraph supplied separately is preserved verbatim in `content.js` and
 ## Proposed specifications
 
 All candidate module mappings, practical tasks, and refreshers are design proposals based on the source topics. They are not quoted policy or complete lessons. Instructor-approved checks, official form integration, and private completion tracking remain future work. Sampling has no supplied syllabus; its number, software, and prerequisites are unconfirmed.
+
+## Version 2 corrections supersede historical entry rules
+
+On October 10, 2026, the Director clarified the prototype’s working rules: MUS 244 has MUS 128 OR MUS 133 as prerequisite/corequisite; the other classes use MUS 244 as formal prerequisite. Accordingly, the historical MUS 324 additional music prerequisite and older MUS 244 entry wording are not used by the Version 2 eligibility engine. Current catalog/administrative confirmation remains separate.
+
+Two illustrative MUS 344 profiles were added: Advanced Mixing & Mastering assumes MUS 347, and Advanced Synthesis & Sampling assumes MUS 348. Both also retain the shared MUS 244 baseline and allow equivalent-competency review. Neither example is presented as scheduled, approved, or assigned a DAW.
+
+The older source table documents the supplied syllabi; the site’s active course data and `rules.js` reflect the Director’s latest corrections. The former content generator was removed so rerunning it cannot overwrite these updated rules.

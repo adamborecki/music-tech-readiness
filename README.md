@@ -1,33 +1,33 @@
 # Music Tech Readiness
 
-A public-facing proposal for clearer music technology course expectations, fair consideration of equivalent experience, and a shared Week 1 baseline. For faculty and administrators first, with explanations students can use too.
+A short, interactive permission-code request prototype for Chapman music technology courses.
 
-**Working proposal, October 2026.** This project does not establish policy, administer a diagnostic, issue permission codes, or record completion.
+1. Select coursework: completed, taking now, or planning to take.
+2. See course request routes and select courses.
+3. View readiness modules and answer only relevant questions.
+4. Preview and copy a request summary.
 
-## First version
+**Demo only:** no submission, permission codes, assessment scores, or completion records. Learning modules are draft specifications, not completed lessons. Both advanced MUS 344 courses are illustrative examples, not offerings.
 
-- Faculty/student explanations and vocabulary.
-- MVP profiles for MUS 244, MUS 324, and MUS 347.
-- Shared foundation specifications plus Logic and Ableton transition modules.
-- Prof. Ochs’s exact MUS 324 acknowledgment.
-- Music Tech Den → Google Form → Director review → Week 1 proposal.
-- Interactive permission-form demo and copyable planning summary.
-- Historical profiles for MUS 248, MUS 344, MUS 346, and MUS 348.
+## Working rules
 
-MUS 244 remains required where the curriculum requires it. Approval to enter another course does not award MUS 244 credit. Entry skills are distinct from advanced course outcomes.
+MUS 244 requires MUS 128 or MUS 133 as a prerequisite/corequisite. Other courses require MUS 244. Examples add MUS 347 for Advanced Mixing & Mastering or MUS 348 for Advanced Synthesis & Sampling; equivalent-competency review is available. Taking MUS 244 alongside an upper-level course requires approval. Planned courses never silently satisfy prerequisites.
 
-## View
+These rules reflect the Director’s October 10, 2026 corrections and supersede the historical syllabus summaries for the prototype. They are not independently verified catalog rules. A normal request route does not guarantee a seat, waive degree requirements, or issue prerequisite credit.
 
-Open `index.html` locally. No build or dependencies needed.
+## Development
 
-For GitHub Pages, choose **Settings → Pages → Deploy from a branch → main → /(root)**. The expected URL after publication is https://adamborecki.github.io/music-tech-readiness/ . Hosting is not enabled by this commit; verify the Pages result before sharing.
+Open `index.html` locally. No build or dependencies. `content.js` holds courses, modules, and the exact Ochs message. `rules.js` holds eligibility logic. `app.js` holds interactions. `styles.css` holds layout. No storage, external fonts, analytics, or student-data transmission.
 
-Optional Google Fonts have system fallbacks. No storage, student-data transmission, or analytics.
+```sh
+node --check app.js
+node --check rules.js
+node --check content.js
+node scripts/check.mjs
+```
 
-## Edit
+Checks cover 1,152 eligibility combinations, corequisites, concurrent enrollment, advanced examples, data references, and initial render. Browser layout verification is still needed.
 
-`index.html`: structure. `styles.css`: design. `app.js`: interactions. `content.js`: course/module data. Edit `scripts/create-content.py` and rerun it to regenerate content. `docs/implementation.md`: workflow and form schema. `docs/source-map.md`: sources and uncertainties.
+The existing `.github/workflows/static.yml` publishes the repository to GitHub Pages when configured. Expected URL: https://adamborecki.github.io/music-tech-readiness/ . Verify deployment before sharing.
 
-## Verify
-
-Run `node --check app.js`, `node --check content.js`, and `node scripts/check.mjs`. Content and branching checks are included. Browser layout verification remains needed. Original syllabi and private student records are not committed.
+See [implementation notes](docs/implementation.md) and [source map](docs/source-map.md). Original syllabi and student records are not published.

@@ -1,66 +1,32 @@
-# Implementation brief
+# Version 2 implementation
 
-Music Tech Readiness links fair consideration of prior experience with a course-specific baseline confirmed by the end of Week 1. The immediate deliverable explains the system and supports redesign of the existing permission-code request form. It is a proposal, not an operational enrollment system.
+The site is a visual prototype of a replacement for the long permission-code Google Form. Its main flow is coursework → course options → readiness and relevant questions → summary. Background explanation is collapsed. New vocabulary uses tappable, keyboard-accessible help text.
 
-## Shared vocabulary
+## Eligibility
 
-| Term | Meaning |
+| Situation | Route |
 | --- | --- |
-| Course Readiness Profile | Starting skills, teaching software, and participation expectations |
-| Readiness Module | Reusable learning/review and a way to demonstrate the relevant skill |
-| Readiness Preview | Informal self-check, not authenticated evidence |
-| Equivalent Competency | Proposed basis for entry without listed prerequisite; no course credit |
-| Week 1 Readiness Check | Instructor confirmation of baseline skills |
-| Course-Fit Acknowledgment | Agreement to participation, separate from skill |
+| MUS 244 with MUS 128 or 133 completed | Normal permission-code request |
+| MUS 244 with MUS 128 or 133 taking/planned | Corequisite route; theory enrollment/completion must be confirmed |
+| Other course with MUS 244 completed | Normal route |
+| Missing prerequisite is currently being taken; requested course follows it | Pending successful completion, not yet confirmed |
+| Missing prerequisite is planned or absent | Equivalent competency review |
+| Upper-level course alongside MUS 244 | Equivalent competency approval |
+| Advanced Mixing & Mastering example | MUS 244 + MUS 347, or equivalent competency review |
+| Advanced Synthesis & Sampling example | MUS 244 + MUS 348, or equivalent competency review |
 
-“Music Tech Readiness” is the umbrella; “Power up for your next course” is the invitation.
+“Prerequisite met” indicates the ordinary request route, not admission, a seat, a code, or waived degree requirements. “Completed” records user input only; this prototype does not verify grades. A planned theory corequisite is visibly conditional. For MUS 244 without a theory plan, the Director’s review is needed; no automatic competency waiver of theory is promised.
 
-## MVP
+## Modules and request questions
 
-MUS 244 supplies foundational material and remains required where the curriculum requires it. MUS 324 needs Logic and the Ochs acknowledgment. MUS 347 needs Ableton, basic recording, signal path, and computer/DAW literacy. The DAW assignments are the Director’s current confirmation, not inferred from old syllabi.
+Every selected course shows modules regardless of completed prerequisites. Logic transition accompanies MUS 324; Ableton transition accompanies MUS 347. DAW confidence is self-reported and does not certify completion. Unknown software for other courses remains unspecified.
 
-Candidate modules: files/project handoff, audio/signal flow, DAW audio fundamentals, MIDI fundamentals, Logic transition, Ableton transition. Synthesis is future expansion. Final granularity and must-pass/review-only assignments await instructor review. Demonstrations should test skills needed to begin, not full upper-level course outcomes.
+Missing-prerequisite routes ask for relevant experience and acknowledgment that approval/checks are needed. MUS 324 separately shows Ochs’s exact message and asks for agreement. Unchecked agreements and missing experience remain visibly incomplete in the summary; previewing a summary is not submitting a valid request.
 
-## Google Form integration
+Modules open draft specifications: goal, candidate skills, practice task, and refresher idea. They are not complete lessons. External lesson URLs can be added later. Advanced readiness modules have no invented curriculum or passing scores.
 
-Keep Music Tech Den on Canvas as the entry point; improve the Director’s existing Google Form rather than adding another queue. Link the site to the official form once its URL is supplied.
+## Future integration
 
-| Proposed field | Route | Purpose |
-| --- | --- | --- |
-| Course, section, term | All | Identify offering |
-| Completed prerequisites and grades | All | Normal versus exception review |
-| Previous DAW and teaching-DAW familiarity | All | Identify transition needs |
-| Prior coursework/experience | Missing prerequisite | Give Director context |
-| Informal preview by skill area | Missing prerequisite; optional otherwise | Guide preparation, not certify readiness |
-| Ochs message and agreement | MUS 324 | Preserve existing acknowledgment |
-| Performer/project plan | Optional MUS 324 support question | Identify collaboration needs, not add a gate |
-| Provisional-approval acknowledgment | Exception route after wording approved | Explain later confirmation clearly |
-| Status/review summary | Director | Reduce repeated interpretation |
+Keep Music Tech Den as the known entry point. Connect this flow to the new request form/review system once ready. Then define identifiers, actual sections/term/availability, minimum grades, private record ownership, approval authority, and submission confirmation. Keep personal records out of this public repository.
 
-The official form can collect its usual identifiers in its existing environment. The public prototype collects none. Keep student requests and completions out of this public repository.
-
-Suggested triage: normal request; equivalent competency review; incomplete information; preparation needed. These assist the Director and do not issue codes automatically.
-
-## Assessment and support
-
-The preview is informal and cannot authenticate who did the work. MUS 347’s supplied syllabus names a diagnostic examination as an alternative; do not silently replace it with the informal preview.
-
-Instructors define required demonstrations, passing standards, and review-only areas. Students can demonstrate familiar skills immediately. Others review materials, use tutoring, and retest. Completion is proposed to be reusable within a semester; later semesters may need refreshers.
-
-## Open decisions
-
-- Current catalog wording and approval authority, including MUS 324’s music prerequisite and MUS 347’s diagnostic alternative.
-- Must-pass/review-only criteria and whether they differ by admission route.
-- Assessment format, accessibility, passing standards, integrity, and retests.
-- Week 1 deadline relative to add/drop dates.
-- Consequences: tutoring/remediation for rusty prerequisite completers; possible departure for unsuccessful provisional entrants. Neither is finalized policy.
-- Tutor capacity, record ownership, private completion system.
-- Official form URL and existing learning materials.
-- Sampling course number, DAW, and synthesis expectations.
-- Whether MUS 347 should become a prerequisite for later courses; this is a future idea.
-
-## Teaching handoff
-
-Compare MUS 244 outputs with MUS 347 inputs first. Reuse existing teaching chunks rather than building duplicate courses. Have the next MUS 347 instructor review Ableton tasks. Have synthesis instructors distinguish MUS 244 refreshers from skills taught inside MUS 348.
-
-For MUS 324, clarify recording assignments and support access to acoustic performers before adding entry restrictions. The acknowledgment allows recording oneself or others; it does not require students to be acoustic performers.
+The informal readiness preview cannot verify competency. Instructors define Week 1 checks, required versus review-only skills, passing criteria, deadlines, tutoring, and retests. Consequences for failed checks are not final. The exact relationship to existing diagnostic alternatives and current catalog rules needs review before operational use.

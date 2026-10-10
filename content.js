@@ -12,7 +12,9 @@ window.READINESS = {
       ],
       "task": "Create a project, import one audio file, save it with its media, reopen it from another folder, and export a playable audio file.",
       "review": "Practice the full save → reopen → export → listen cycle. Check the project and exported file separately.",
-      "basis": "MUS 244 digital data management; MUS 347 computer literacy and DAW workflow."
+      "basis": "MUS 244 digital data management; MUS 347 computer literacy and DAW workflow.",
+      "status": "Specification only",
+      "url": null
     },
     {
       "id": "signal",
@@ -26,7 +28,9 @@ window.READINESS = {
       ],
       "task": "Draw or explain one input-to-output path and demonstrate a recording with usable level and audible playback.",
       "review": "For a silent track, inspect the source, selected input, track meter, routing, output, and listening device in order.",
-      "basis": "MUS 347 explicitly names signal path and basic recording; MUS 324 covers mixers and signal flow."
+      "basis": "MUS 347 explicitly names signal path and basic recording; MUS 324 covers mixers and signal flow.",
+      "status": "Specification only",
+      "url": null
     },
     {
       "id": "edit",
@@ -40,7 +44,9 @@ window.READINESS = {
       ],
       "task": "Import two audio files, trim their starts, add a fade, balance them, and export a short stereo mix.",
       "review": "Start with a duplicate project. Make one edit at a time, listen at edit boundaries, then check the export.",
-      "basis": "MUS 244 recording/audio editing and MUS 347 basic editing."
+      "basis": "MUS 244 recording/audio editing and MUS 347 basic editing.",
+      "status": "Specification only",
+      "url": null
     },
     {
       "id": "midi",
@@ -54,7 +60,9 @@ window.READINESS = {
       ],
       "task": "Create a short MIDI phrase, change one note and its velocity, and export the audible result.",
       "review": "Check both the note data and the sound-generating instrument. MIDI notes alone are not a recording of sound.",
-      "basis": "MUS 244 MIDI sequencing; MUS 348 external controls and MIDI."
+      "basis": "MUS 244 MIDI sequencing; MUS 348 external controls and MIDI.",
+      "status": "Specification only",
+      "url": null
     },
     {
       "id": "logic",
@@ -68,7 +76,9 @@ window.READINESS = {
       ],
       "task": "In Logic, record or import a passage, edit with a fade, use one insert and one send, and bounce a stereo file.",
       "review": "Locate the Tracks area, Inspector/channel strip, Mixer, and Bounce command. Rebuild a tiny project you already understand in your usual DAW.",
-      "basis": "Logic for MUS 324 confirmed by the Director on October 10, 2026; task is proposed."
+      "basis": "Logic for MUS 324 confirmed by the Director on October 10, 2026; task is proposed.",
+      "status": "Specification only",
+      "url": null
     },
     {
       "id": "ableton",
@@ -82,7 +92,9 @@ window.READINESS = {
       ],
       "task": "In Ableton, arrange two audio tracks, check Warp deliberately, add a device and a return send, then export a stereo mix.",
       "review": "Use Arrangement View for the initial linear editing task. Identify Session View so you can explain where clips are playing. Confirm the export range and listen to the result.",
-      "basis": "Ableton for MUS 347 confirmed by the Director on October 10, 2026; task is proposed."
+      "basis": "Ableton for MUS 347 confirmed by the Director on October 10, 2026; task is proposed.",
+      "status": "Specification only",
+      "url": null
     },
     {
       "id": "synth",
@@ -96,7 +108,37 @@ window.READINESS = {
       ],
       "task": "Make one sustained and one percussive sound, explaining how the envelope and filter change the result.",
       "review": "Change one parameter at a time and describe what you hear. Reuse MUS 244 material before developing additional lessons.",
-      "basis": "MUS 244 acoustics/synthesis; MUS 348 componentry. Which skills sampling will require remains undecided."
+      "basis": "MUS 244 acoustics/synthesis; MUS 348 componentry. Which skills sampling will require remains undecided.",
+      "status": "Specification only",
+      "url": null
+    },
+    {
+      "id": "mix-advanced",
+      "title": "Advanced mixing readiness",
+      "kind": "Example module",
+      "goal": "Demonstrate the mixing and processing skills assumed after MUS 347.",
+      "skills": [
+        "Specific skills to be defined with the instructor."
+      ],
+      "task": "Instructor to define a practical mixing task and passing criteria.",
+      "review": "Learning materials still to be built.",
+      "basis": "Illustrative advanced-course example requested by the Director.",
+      "status": "Not built",
+      "url": null
+    },
+    {
+      "id": "synth-advanced",
+      "title": "Advanced synthesis readiness",
+      "kind": "Example module",
+      "goal": "Demonstrate the synthesis skills assumed after MUS 348.",
+      "skills": [
+        "Specific skills to be defined with the instructor."
+      ],
+      "task": "Instructor to define a sound-design task and passing criteria.",
+      "review": "Learning materials still to be built.",
+      "basis": "Illustrative advanced-course example requested by the Director.",
+      "status": "Not built",
+      "url": null
     }
   ],
   "courses": [
@@ -104,116 +146,188 @@ window.READINESS = {
       "id": "244",
       "code": "MUS 244",
       "title": "Principles of Music Technology",
-      "scope": "Foundation",
-      "daw": "Flexible DAW",
-      "summary": "The shared foundation and a place to build the music-tech community. Readiness resources can reuse its teaching materials.",
-      "source": "Spring 2026 syllabus",
-      "prerequisite": "Uploaded syllabus: MUS 098, MUS 128, diagnostic exam, or instructor consent; basic notation, music fundamentals, and computer literacy.",
+      "requires": [],
       "modules": [
         "files",
         "signal",
         "edit",
         "midi"
       ],
-      "note": "Modules do not award credit for MUS 244 or remove it from a student’s degree requirements. These are curriculum links, not approved MUS 244 entry checks."
+      "daw": "Choose your DAW",
+      "example": false
+    },
+    {
+      "id": "248",
+      "code": "MUS 248",
+      "title": "AV Concert Recording & Archiving",
+      "requires": [
+        "244"
+      ],
+      "modules": [
+        "files",
+        "signal",
+        "edit"
+      ],
+      "daw": "Confirm with instructor",
+      "example": false
     },
     {
       "id": "324",
       "code": "MUS 324",
       "title": "Audio Recording Techniques",
-      "scope": "MVP",
-      "daw": "Logic",
-      "summary": "Record acoustic music performances and share recordings for listening and feedback. Course fit and software readiness both matter.",
-      "source": "Fall 2023 syllabus (contains an older class-time line) + Director’s current DAW confirmation + supplied Ochs message",
-      "prerequisite": "Uploaded syllabus: MUS 244 with C or better AND MUS 128 or MUS 133 with C or better. Current catalog and approval authority need confirmation.",
+      "requires": [
+        "244"
+      ],
       "modules": [
         "files",
         "signal",
         "edit",
         "logic"
       ],
-      "note": "Read Prof. Ochs’s acknowledgment below. Collaborator availability is a separate planning issue; no additional restriction is proposed here."
+      "daw": "Logic",
+      "example": false
     },
     {
       "id": "347",
       "code": "MUS 347",
       "title": "Post Production",
-      "scope": "MVP",
-      "daw": "Ableton Live",
-      "summary": "Build on basic audio workflow to learn processing, mixing, audio manipulation, and mastering. Arrive able to operate the teaching DAW.",
-      "source": "Spring 2026 syllabus + Director’s current DAW confirmation",
-      "prerequisite": "Uploaded syllabus: MUS 244 OR a diagnostic examination in computer literacy and basic audio recording skills. Also identifies microphone setup, signal path, and DAW knowledge.",
+      "requires": [
+        "244"
+      ],
       "modules": [
         "files",
         "signal",
         "edit",
         "ableton"
       ],
-      "note": "An informal readiness preview does not automatically satisfy the syllabus’s diagnostic-examination alternative. Review how approved equivalent competency would fit that rule. Making MUS 347 a prerequisite for later courses is a future proposal."
-    },
-    {
-      "id": "248",
-      "code": "MUS 248",
-      "title": "AV Concert Recording & Archiving",
-      "scope": "Future",
-      "daw": "Confirm workflow",
-      "summary": "Concert audio/video capture, editing, delivery, and reliable handling of recordings.",
-      "source": "Fall 2025 syllabus; catalog description explicitly labeled proposed",
-      "prerequisite": "Supplied proposed description: MUS 244 or instructor consent; basic microphone setup and audio/video software skills.",
-      "modules": [
-        "files",
-        "signal",
-        "edit"
-      ],
-      "note": "Future profile: video, practical equipment checks, and current software expectations need instructor review. Do not reuse the old schedule or grading as current policy."
+      "daw": "Ableton Live",
+      "example": false
     },
     {
       "id": "348",
       "code": "MUS 348",
       "title": "Introduction to Music Synthesis",
-      "scope": "Future",
-      "daw": "Confirm with instructor",
-      "summary": "Oscillators, filters, envelopes, modulation, and sound design. The uploaded syllabus identifies this course as MUS 348.",
-      "source": "Spring 2019 syllabus; description explicitly labeled proposed",
-      "prerequisite": "Supplied proposed description: MUS 244 or instructor consent.",
+      "requires": [
+        "244"
+      ],
       "modules": [
         "files",
         "midi",
         "synth"
       ],
-      "note": "Advanced sound-design outcomes belong inside the course. The eventual entry baseline should include only the skills needed to begin."
+      "daw": "Confirm with instructor",
+      "example": false
     },
     {
       "id": "346",
       "code": "MUS 346",
-      "title": "Music & Interactive Technology",
-      "scope": "Future",
-      "daw": "Max/MSP",
-      "summary": "An introduction to patching, synthesis, processing, and interactive performance in Max/MSP.",
-      "source": "Spring 2020 syllabus; description explicitly labeled proposed",
-      "prerequisite": "Supplied proposed description: MUS 244 or instructor consent.",
+      "title": "Music & Interactive Technology (Max/MSP)",
+      "requires": [
+        "244"
+      ],
       "modules": [
         "files",
         "signal",
         "midi"
       ],
-      "note": "The syllabus teaches Max programming. Do not turn advanced patching outcomes into entrance requirements. Any Max orientation module remains to be defined."
+      "daw": "Max/MSP",
+      "example": false
     },
     {
       "id": "344",
       "code": "MUS 344",
-      "title": "Advanced Topics / Sampling",
-      "scope": "Future",
-      "daw": "Topic dependent",
-      "summary": "Build a separate readiness profile for each topic, rather than applying one fixed package to every MUS 344 offering.",
-      "source": "Three historical syllabi: Remixing Concert Music (2021), Live Performance (2020), Build Your Own Music Tech Class (2020)",
-      "prerequisite": "All three supplied syllabi: MUS 244 with C or better, or instructor consent. A synthesis prerequisite for proposed sampling is undecided.",
+      "title": "Special Topics",
+      "requires": [
+        "244"
+      ],
       "modules": [
         "files",
         "midi"
       ],
-      "note": "Sampling has no supplied syllabus yet. Its course number, DAW, synthesis baseline, and formal prerequisite need confirmation. Historical live-performance content is not the new sampling specification."
+      "daw": "Depends on topic",
+      "example": false
+    },
+    {
+      "id": "344-mix",
+      "code": "MUS 344",
+      "title": "Advanced Mixing & Mastering",
+      "requires": [
+        "244",
+        "347"
+      ],
+      "modules": [
+        "files",
+        "signal",
+        "edit",
+        "mix-advanced"
+      ],
+      "daw": "Not specified",
+      "example": true
+    },
+    {
+      "id": "344-synth",
+      "code": "MUS 344",
+      "title": "Advanced Synthesis & Sampling",
+      "requires": [
+        "244",
+        "348"
+      ],
+      "modules": [
+        "files",
+        "midi",
+        "synth",
+        "synth-advanced"
+      ],
+      "daw": "Not specified",
+      "example": true
     }
   ],
-  "acknowledgment": "For MUS 324 Audio Recording Techniques, the main goal is to create professional-grade recordings of acoustic music performances. In addition to in-class hands-on activities, there will be several recording assignments. The class will suit you well if you have an interest in recording musicians that perform acoustically. (This could be you playing or singing your own music, or it could be friends or fellow students playing chamber music or Jazz.) We will listen to your recordings in class. (This also means that the class won’t be a good fit if you have little interest in recording acoustic music or if you are unwilling to share your productions with class mates.)"
+  "acknowledgment": "For MUS 324 Audio Recording Techniques, the main goal is to create professional-grade recordings of acoustic music performances. In addition to in-class hands-on activities, there will be several recording assignments. The class will suit you well if you have an interest in recording musicians that perform acoustically. (This could be you playing or singing your own music, or it could be friends or fellow students playing chamber music or Jazz.) We will listen to your recordings in class. (This also means that the class won’t be a good fit if you have little interest in recording acoustic music or if you are unwilling to share your productions with class mates.)",
+  "history": [
+    {
+      "id": "128",
+      "code": "MUS 128",
+      "title": "Fundamentals of Music Theory"
+    },
+    {
+      "id": "133",
+      "code": "MUS 133",
+      "title": "Theory I"
+    },
+    {
+      "id": "244",
+      "code": "MUS 244",
+      "title": "Principles of Music Technology"
+    },
+    {
+      "id": "248",
+      "code": "MUS 248",
+      "title": "AV Concert Recording"
+    },
+    {
+      "id": "324",
+      "code": "MUS 324",
+      "title": "Audio Recording Techniques"
+    },
+    {
+      "id": "347",
+      "code": "MUS 347",
+      "title": "Post Production"
+    },
+    {
+      "id": "348",
+      "code": "MUS 348",
+      "title": "Introduction to Music Synthesis"
+    },
+    {
+      "id": "346",
+      "code": "MUS 346",
+      "title": "Music & Interactive Technology"
+    },
+    {
+      "id": "344",
+      "code": "MUS 344",
+      "title": "Special Topics"
+    }
+  ]
 };
