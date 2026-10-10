@@ -1,1 +1,45 @@
 :root{--ink:#25332e;--muted:#606f67;--line:#dce3dd;--green:#235a42;--paper:#f7f9f6}*{box-sizing:border-box}body{margin:0;font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--ink);background:var(--paper)}a{color:var(--green)}header{max-width:1020px;margin:auto;padding:22px 28px;display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid var(--line)}.brand{text-decoration:none;font-weight:750;font-size:17px}.prototype{font-size:12px;color:var(--muted)}main{max-width:900px;margin:35px auto;padding:0 28px}h1{font-size:34px;letter-spacing:-1px;line-height:1.2;margin:0 0 12px}h2{font-size:21px;letter-spacing:-.4px;margin:0 0 20px}h3{font-size:18px;margin:0}.intro{margin:0 0 12px;color:var(--muted)}.notice{font-size:12px;margin:0 0 30px;color:var(--muted)}section{border-top:1px solid var(--line);padding:26px 0}.number{display:inline-grid;place-items:center;width:28px;height:28px;background:#e5eee4;border-radius:50%;font-size:14px;margin-right:9px}.history-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 22px}.history-item label{display:block;font-size:12px;min-height:43px;margin-bottom:6px}.history-item strong{display:block;font-size:14px}.history-item select{width:100%}select,textarea{font:inherit;color:var(--ink);border:1px solid #becbc0;background:white;border-radius:5px;padding:9px 11px;max-width:100%}select{font-size:13px}.timing{display:flex;align-items:center;gap:15px;margin-top:22px;font-size:13px}.small{font-size:12px;color:var(--muted)}.legend{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:12px}.badge{display:inline-block;font-size:11px;background:#ecefe9;border-radius:4px;padding:3px 8px;white-space:normal}.eligible{background:#e0efdf;color:#245634}.review{background:#fff0d5;color:#76521a}.pending{background:#e7edf5;color:#385877}.course-row{display:grid;grid-template-columns:26px 1fr 200px;gap:12px;align-items:start;padding:15px 0;border-bottom:1px solid var(--line)}.course-row input{width:18px;height:18px;accent-color:var(--green);margin-top:4px}.course-row label{cursor:pointer}.course-row strong{font-size:14px;display:block}.course-row .sub{display:block;font-size:12px;color:var(--muted);margin-top:3px}.route{font-size:11px;color:var(--muted)}.route .badge{margin-bottom:4px}.example-tag{font-size:10px;color:#74603d;font-weight:500;margin-left:6px}.term{position:relative;display:inline}.help{border:0;padding:0;background:transparent;color:var(--green);font:inherit;text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer}.tooltip{position:absolute;z-index:10;top:28px;left:0;width:265px;background:var(--ink);color:white;padding:13px;border-radius:5px;font-size:12px;font-weight:400;box-shadow:0 6px 20px #0002}.readiness-note{font-size:13px;margin-bottom:20px}.prepare-card{background:white;border:1px solid var(--line);border-radius:7px;padding:20px;margin:15px 0}.prepare-card header{padding:0 0 14px;border-bottom:1px solid var(--line);display:block}.prepare-card header p{margin:5px 0 0;font-size:12px;color:var(--muted)}.module-links{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.module-link{font:inherit;font-size:12px;padding:6px 10px;background:#f2f6ef;border:1px solid #d5dfd0;border-radius:5px;cursor:pointer;color:var(--green)}.prepare-card .field{display:block;margin:15px 0;font-size:13px}.field select,.field textarea{display:block;margin-top:6px;width:100%}.field textarea{min-height:80px;resize:vertical}.check{display:flex;gap:9px;font-size:13px;align-items:start;margin:15px 0}.check input{accent-color:var(--green);margin-top:4px;flex-shrink:0}.ack{margin:16px 0}.ack summary{font-size:13px;cursor:pointer;font-weight:600}.ack blockquote{margin:12px 0;padding-left:15px;border-left:2px solid var(--line);font-size:13px;line-height:1.7}.review-box{border-top:1px solid var(--line);padding-top:12px}.review-box p{font-size:13px}.primary{font:inherit;background:var(--green);color:white;padding:12px 17px;border:0;border-radius:5px;font-weight:650;cursor:pointer}#summary{font:13px/1.65 system-ui;white-space:pre-wrap;background:white;border:1px solid var(--line);padding:20px;border-radius:5px;overflow-wrap:anywhere}#copy{font:inherit;padding:9px 14px;background:white;border:1px solid #becbc0;border-radius:5px;cursor:pointer}#copy-status{font-size:12px;margin-left:10px}.faculty{font-size:13px;margin:15px 0 35px;border-top:1px solid var(--line);padding-top:20px}.faculty summary{cursor:pointer;font-weight:600}.faculty p{max-width:700px;color:var(--muted)}dialog{border:1px solid var(--line);border-radius:9px;max-width:600px;width:calc(100% - 32px);padding:28px;color:var(--ink)}dialog::backdrop{background:#16221d80}dialog h2{margin:16px 25px 15px 0}dialog h3{font-size:14px;margin-top:20px}dialog p,dialog li{font-size:14px}.close{position:absolute;right:16px;top:16px;border:0;background:transparent;font-size:18px;cursor:pointer}footer{max-width:900px;margin:0 auto;padding:20px 28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:30;background:white;padding:10px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #4885bf;outline-offset:4px}[hidden]{display:none!important}@media(max-width:650px){header{padding:18px}.brand{font-size:15px}.prototype{font-size:10px}main{padding:0 18px;margin-top:25px}h1{font-size:28px}.history-grid{grid-template-columns:1fr 1fr;gap:14px}.history-item label{font-size:11px}.timing{display:block}.timing select{display:block;width:100%;margin-top:7px}.course-row{grid-template-columns:23px 1fr;gap:9px}.route{grid-column:2}.prepare-card{padding:16px}.tooltip{position:fixed;top:auto;bottom:20px;left:18px;width:calc(100vw - 36px)}h2{font-size:20px}.legend{gap:7px}footer{padding:20px 18px}}@media print{button,#history,.timing,.notice,.faculty,footer{display:none}.prepare-card,section{break-inside:avoid}body{background:white}}
+
+
+/* Follow the device appearance automatically, including live system changes. */
+:root { color-scheme: light; }
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --ink: #e5eee8;
+    --muted: #aab9b0;
+    --line: #35473c;
+    --green: #a0dcba;
+    --paper: #151d18;
+  }
+  select, textarea, .prepare-card, #summary, #copy, dialog, .skip:focus {
+    background: #202b23;
+    color: var(--ink);
+    border-color: #526659;
+  }
+  textarea::placeholder { color: #a5b3a9; }
+  .number { background: #2e4333; color: #d9efdd; }
+  .badge { background: #344236; color: #dae5dc; }
+  .badge.eligible { background: #254630; color: #c0ecc9; }
+  .badge.review { background: #4a3c22; color: #f2d49d; }
+  .badge.pending { background: #2b3e52; color: #c0d8f3; }
+  .example-tag { color: #dfc38e; }
+  .module-link {
+    background: #29382b;
+    color: var(--green);
+    border-color: #526659;
+  }
+  .primary { background: #a0dcba; color: #14281b; }
+  .tooltip {
+    background: #dbe9df;
+    color: #15251b;
+    box-shadow: 0 6px 20px #0006;
+  }
+  dialog::backdrop { background: #0009; }
+  .close { color: var(--ink); }
+  button:focus-visible, a:focus-visible, input:focus-visible,
+  select:focus-visible, textarea:focus-visible, summary:focus-visible {
+    outline-color: #8ac1f3;
+  }
+  ::selection { background: #436d52; color: #fff; }
+}
